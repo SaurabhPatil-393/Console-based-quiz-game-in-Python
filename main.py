@@ -42,7 +42,7 @@ def save_score(name, score, total_points):
     percentage = (score / total_points) * 100 if total_points > 0 else 0
     
     with open(SCORES_FILE, "a") as f:
-        f.write(f"{name} | {score}/{total_points} ({percentage:.1f}%) | {timestamp}\\n")
+        f.write(f"{name} | {score}/{total_points} ({percentage:.1f}%) | {timestamp}\n")
 
 def get_player_stats(name):
     """
@@ -324,8 +324,8 @@ def play_quiz():
     # Shuffle questions
     random.shuffle(questions)
     
-    # Limit to 10 questions for better gameplay
-    questions = questions[:10]
+    # Limit to 15 questions for better gameplay (increased from 10)
+    questions = questions[:15]
     
     # Initialize score and tracking variables
     score = 0
@@ -334,16 +334,29 @@ def play_quiz():
     incorrect_streak = 0
     streak_bonus = 0
     
+    # Keep track of asked questions to prevent repetition
+    asked_questions = set()
+    
     # Ask questions
     for i, q in enumerate(questions, 1):
         # For adaptive mode, adjust difficulty based on performance
         current_difficulty = difficulty_mode
         if difficulty_mode == "adaptive":
             current_difficulty = get_adaptive_difficulty(correct_streak, incorrect_streak)
-            # Get a question of appropriate difficulty
+            # Get a question of appropriate difficulty that hasn't been asked yet
             diff_questions = get_questions_by_difficulty(current_difficulty)
-            if diff_questions:
-                q = random.choice(diff_questions)
+            # Filter out already asked questions
+            available_questions = [q for q in diff_questions if q['question'] not in asked_questions]
+            
+            # If we've run out of unique questions in this difficulty, use any available
+            if not available_questions:
+                available_questions = diff_questions
+                
+            if available_questions:
+                q = random.choice(available_questions)
+        
+        # Add question to asked set to prevent repetition
+        asked_questions.add(q['question'])
         
         # Calculate time limit
         time_limit = calculate_time_limit(current_difficulty)
@@ -481,14 +494,14 @@ def main():
             show_player_stats()
             print()
         elif choice == "4":
-            print_with_delay(f"\\nThanks for playing! {EMOJIS['heart']}", 0.02, "cyan")
+            print_with_delay(f"\nThanks for playing! {EMOJIS['heart']}", 0.02, "cyan")
             print_with_delay("See you next time! 👋", 0.02, "yellow")
             break
         else:
             print_with_delay("Invalid choice! Please select 1, 2, 3, or 4.", 0.02, "red")
         
         if choice in ["1", "2", "3"]:
-            input("\\nPress Enter to continue...")
+            input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     main()

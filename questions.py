@@ -24,6 +24,24 @@ QUIZ_QUESTIONS = {
                 "options": ["A) function", "B) def", "C) fun", "D) define"],
                 "answer": "B",
                 "points": 10
+            },
+            {
+                "question": "Which function is used to display output in Python?",
+                "options": ["A) print()", "B) echo()", "C) display()", "D) output()"],
+                "answer": "A",
+                "points": 10
+            },
+            {
+                "question": "What is the output of print(2 + 3 * 4)?",
+                "options": ["A) 20", "B) 14", "C) 11", "D) 18"],
+                "answer": "B",
+                "points": 10
+            },
+            {
+                "question": "Which data type is used to store text in Python?",
+                "options": ["A) int", "B) float", "C) string", "D) boolean"],
+                "answer": "C",
+                "points": 10
             }
         ],
         "medium": [
@@ -44,6 +62,26 @@ QUIZ_QUESTIONS = {
                 "question": "What is the output of print(2 ** 3)?",
                 "options": ["A) 6", "B) 8", "C) 9", "D) 5"],
                 "answer": "B",
+                "points": 20
+            },
+            {
+                "question": "What is the correct way to create a list in Python?",
+                "options": ["A) list = [1, 2, 3]", "B) list = (1, 2, 3)", 
+                           "C) list = {1, 2, 3}", "D) list = <1, 2, 3>"],
+                "answer": "A",
+                "points": 20
+            },
+            {
+                "question": "Which method is used to add an element to the end of a list?",
+                "options": ["A) insert()", "B) append()", "C) add()", "D) push()"],
+                "answer": "B",
+                "points": 20
+            },
+            {
+                "question": "What is the output of print(type([]))?",
+                "options": ["A) <class 'list'>", "B) <class 'tuple'>", 
+                           "C) <class 'dict'>", "D) <class 'set'>"],
+                "answer": "A",
                 "points": 20
             }
         ],
@@ -67,6 +105,25 @@ QUIZ_QUESTIONS = {
                            "C) Copies the object", "D) Compares the object"],
                 "answer": "B",
                 "points": 30
+            },
+            {
+                "question": "What is a correct syntax to import a module named 'math'?",
+                "options": ["A) import.math", "B) import math", "C) include math", "D) using math"],
+                "answer": "B",
+                "points": 30
+            },
+            {
+                "question": "Which of the following is NOT a Python loop?",
+                "options": ["A) for", "B) while", "C) do-while", "D) None of the above"],
+                "answer": "C",
+                "points": 30
+            },
+            {
+                "question": "What is the output of print([1, 2, 3] + [4, 5, 6])?",
+                "options": ["A) [1, 2, 3, 4, 5, 6]", "B) [5, 7, 9]", 
+                           "C) [[1, 2, 3], [4, 5, 6]]", "D) Error"],
+                "answer": "A",
+                "points": 30
             }
         ]
     },
@@ -89,6 +146,24 @@ QUIZ_QUESTIONS = {
                 "options": ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Hippopotamus"],
                 "answer": "B",
                 "points": 10
+            },
+            {
+                "question": "How many continents are there in the world?",
+                "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+                "answer": "C",
+                "points": 10
+            },
+            {
+                "question": "Which is the smallest planet in our solar system?",
+                "options": ["A) Earth", "B) Mars", "C) Mercury", "D) Venus"],
+                "answer": "C",
+                "points": 10
+            },
+            {
+                "question": "What is the chemical symbol for water?",
+                "options": ["A) H2O", "B) CO2", "C) NaCl", "D) O2"],
+                "answer": "A",
+                "points": 10
             }
         ],
         "medium": [
@@ -107,6 +182,24 @@ QUIZ_QUESTIONS = {
             {
                 "question": "In which year did World War II end?",
                 "options": ["A) 1944", "B) 1945", "C) 1946", "D) 1947"],
+                "answer": "B",
+                "points": 20
+            },
+            {
+                "question": "Which is the longest river in the world?",
+                "options": ["A) Amazon River", "B) Nile River", "C) Yangtze River", "D) Mississippi River"],
+                "answer": "B",
+                "points": 20
+            },
+            {
+                "question": "What is the largest ocean on Earth?",
+                "options": ["A) Atlantic Ocean", "B) Indian Ocean", "C) Arctic Ocean", "D) Pacific Ocean"],
+                "answer": "D",
+                "points": 20
+            },
+            {
+                "question": "Which country is known as the Land of the Rising Sun?",
+                "options": ["A) China", "B) Japan", "C) South Korea", "D) Thailand"],
                 "answer": "B",
                 "points": 20
             }
@@ -128,6 +221,24 @@ QUIZ_QUESTIONS = {
                 "question": "What is the smallest country in the world?",
                 "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
                 "answer": "B",
+                "points": 30
+            },
+            {
+                "question": "Which mountain is the tallest in the world?",
+                "options": ["A) K2", "B) Kangchenjunga", "C) Mount Everest", "D) Lhotse"],
+                "answer": "C",
+                "points": 30
+            },
+            {
+                "question": "What is the capital of Canada?",
+                "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
+                "answer": "C",
+                "points": 30
+            },
+            {
+                "question": "Which is the largest desert in the world?",
+                "options": ["A) Sahara Desert", "B) Arabian Desert", "C) Gobi Desert", "D) Antarctic Desert"],
+                "answer": "D",
                 "points": 30
             }
         ]
@@ -153,6 +264,25 @@ QUIZ_QUESTIONS = {
                            "C) Store backup data", "D) Improve graphics performance"],
                 "answer": "B",
                 "points": 10
+            },
+            {
+                "question": "What does URL stand for?",
+                "options": ["A) Universal Resource Locator", "B) Uniform Resource Locator", 
+                           "C) Unified Resource Locator", "D) Unique Resource Locator"],
+                "answer": "B",
+                "points": 10
+            },
+            {
+                "question": "Which company developed the Windows operating system?",
+                "options": ["A) Apple", "B) Google", "C) Microsoft", "D) IBM"],
+                "answer": "C",
+                "points": 10
+            },
+            {
+                "question": "What is the brain of the computer called?",
+                "options": ["A) RAM", "B) Motherboard", "C) CPU", "D) Hard Drive"],
+                "answer": "C",
+                "points": 10
             }
         ],
         "medium": [
@@ -175,6 +305,24 @@ QUIZ_QUESTIONS = {
                            "C) Home Tool Transmission Process", "D) Hyperlink Text Transmission Procedure"],
                 "answer": "A",
                 "points": 20
+            },
+            {
+                "question": "Which of the following is NOT a database management system?",
+                "options": ["A) MySQL", "B) PostgreSQL", "C) Oracle", "D) Python"],
+                "answer": "D",
+                "points": 20
+            },
+            {
+                "question": "What is the full form of IP in IP address?",
+                "options": ["A) Internet Protocol", "B) Internal Process", "C) Information Processing", "D) Integrated Program"],
+                "answer": "A",
+                "points": 20
+            },
+            {
+                "question": "Which of these is a version control system?",
+                "options": ["A) Docker", "B) Kubernetes", "C) Git", "D) Jenkins"],
+                "answer": "C",
+                "points": 20
             }
         ],
         "hard": [
@@ -194,6 +342,141 @@ QUIZ_QUESTIONS = {
                 "question": "In blockchain, what does PoW stand for?",
                 "options": ["A) Proof of Work", "B) Proof of Wallet", "C) Proof of Wealth", "D) Proof of Wisdom"],
                 "answer": "A",
+                "points": 30
+            },
+            {
+                "question": "Which of the following is NOT a cloud computing service model?",
+                "options": ["A) IaaS", "B) PaaS", "C) SaaS", "D) HaaS"],
+                "answer": "D",
+                "points": 30
+            },
+            {
+                "question": "What does SQL stand for?",
+                "options": ["A) Structured Query Language", "B) Standard Query Language", 
+                           "C) Sequential Query Language", "D) Simple Query Language"],
+                "answer": "A",
+                "points": 30
+            },
+            {
+                "question": "Which algorithm is used for finding the shortest path in a graph?",
+                "options": ["A) Binary Search", "B) Merge Sort", "C) Dijkstra's Algorithm", "D) Quick Sort"],
+                "answer": "C",
+                "points": 30
+            }
+        ]
+    },
+    "Science": {
+        "easy": [
+            {
+                "question": "What is the chemical symbol for gold?",
+                "options": ["A) Go", "B) Gd", "C) Au", "D) Ag"],
+                "answer": "C",
+                "points": 10
+            },
+            {
+                "question": "Which gas do plants absorb from the atmosphere?",
+                "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"],
+                "answer": "C",
+                "points": 10
+            },
+            {
+                "question": "What is the hardest natural substance on Earth?",
+                "options": ["A) Gold", "B) Iron", "C) Diamond", "D) Platinum"],
+                "answer": "C",
+                "points": 10
+            },
+            {
+                "question": "How many bones are in the human body?",
+                "options": ["A) 206", "B) 300", "C) 150", "D) 185"],
+                "answer": "A",
+                "points": 10
+            },
+            {
+                "question": "What is the largest organ in the human body?",
+                "options": ["A) Heart", "B) Liver", "C) Brain", "D) Skin"],
+                "answer": "D",
+                "points": 10
+            },
+            {
+                "question": "Which planet is closest to the Sun?",
+                "options": ["A) Venus", "B) Earth", "C) Mercury", "D) Mars"],
+                "answer": "C",
+                "points": 10
+            }
+        ],
+        "medium": [
+            {
+                "question": "What is the powerhouse of the cell?",
+                "options": ["A) Nucleus", "B) Ribosome", "C) Mitochondria", "D) Endoplasmic Reticulum"],
+                "answer": "C",
+                "points": 20
+            },
+            {
+                "question": "What is the speed of light in vacuum?",
+                "options": ["A) 300,000 km/s", "B) 150,000 km/s", "C) 450,000 km/s", "D) 600,000 km/s"],
+                "answer": "A",
+                "points": 20
+            },
+            {
+                "question": "Which element has the atomic number 1?",
+                "options": ["A) Helium", "B) Hydrogen", "C) Lithium", "D) Oxygen"],
+                "answer": "B",
+                "points": 20
+            },
+            {
+                "question": "What is the chemical formula for table salt?",
+                "options": ["A) NaCl", "B) H2O", "C) CO2", "D) CaCO3"],
+                "answer": "A",
+                "points": 20
+            },
+            {
+                "question": "Which of these is NOT a type of rock?",
+                "options": ["A) Igneous", "B) Sedimentary", "C) Metamorphic", "D) Crystalline"],
+                "answer": "D",
+                "points": 20
+            },
+            {
+                "question": "What force keeps planets in orbit around the Sun?",
+                "options": ["A) Magnetic force", "B) Friction", "C) Gravity", "D) Centrifugal force"],
+                "answer": "C",
+                "points": 20
+            }
+        ],
+        "hard": [
+            {
+                "question": "What is the study of heredity and variation called?",
+                "options": ["A) Ecology", "B) Genetics", "C) Anatomy", "D) Physiology"],
+                "answer": "B",
+                "points": 30
+            },
+            {
+                "question": "Which subatomic particle has a negative charge?",
+                "options": ["A) Proton", "B) Neutron", "C) Electron", "D) Nucleus"],
+                "answer": "C",
+                "points": 30
+            },
+            {
+                "question": "What is the unit of electrical resistance?",
+                "options": ["A) Volt", "B) Ampere", "C) Ohm", "D) Watt"],
+                "answer": "C",
+                "points": 30
+            },
+            {
+                "question": "Which law states that the current through a conductor is directly proportional to the voltage across it?",
+                "options": ["A) Newton's Law", "B) Ohm's Law", "C) Faraday's Law", "D) Coulomb's Law"],
+                "answer": "B",
+                "points": 30
+            },
+            {
+                "question": "What is the process by which plants make their food using sunlight called?",
+                "options": ["A) Respiration", "B) Digestion", "C) Photosynthesis", "D) Fermentation"],
+                "answer": "C",
+                "points": 30
+            },
+            {
+                "question": "Which element is the most abundant in the Earth's atmosphere?",
+                "options": ["A) Oxygen", "B) Carbon Dioxide", "C) Nitrogen", "D) Argon"],
+                "answer": "C",
                 "points": 30
             }
         ]

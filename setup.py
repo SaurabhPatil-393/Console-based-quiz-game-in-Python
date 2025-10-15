@@ -14,7 +14,7 @@ setup(
     description="An interactive console-based quiz game with multiple categories and difficulty levels",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/saurabhpatil-393/console-quiz-game",
+    url="https://github.com/SaurabhPatil-393/Console-based-quiz-game-in-Python",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
