@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console-Based Quiz Game in Python</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .emoji {
+            font-size: 1.5em;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: #2575fc;
+            margin-top: 0;
+        }
+        .instructions {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: opacity 0.3s ease;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-left: 4px solid #2196f3;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧠 Console-Based Quiz Game</h1>
+        <p>Test your knowledge with this interactive Python quiz game</p>
+    </header>
+
+    <main>
+        <div class="highlight">
+            <h2>About This Project</h2>
+            <p>This is a stylish and interactive quiz game built with Python that runs in the console/terminal. Test your knowledge across multiple categories with a visually appealing interface featuring colors, emojis, and smooth animations.</p>
+            <p>Created by <strong>Saurabh Patil</strong> as part of an educational project demonstrating Python programming skills.</p>
+        </div>
+
+        <h2>🎮 Key Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3 class="emoji">📚 Multiple Categories</h3>
+                <p>Questions in Python, General Knowledge, Technology, and Science</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="emoji">🎚️ Difficulty Levels</h3>
+                <p>Easy, Medium, and Hard questions with different point values (10/20/30 points)</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="emoji">🤖 Adaptive Mode</h3>
+                <p>Game automatically adjusts question difficulty based on your performance</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="emoji">⏱️ Timer Functionality</h3>
+                <p>Time limits per question (15/12/10 seconds) with bonus points for quick answers</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="emoji">🏆 Enhanced Scoring</h3>
+                <p>Streak bonuses, time bonuses, and penalties for wrong answers</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="emoji">📊 Player Statistics</h3>
+                <p>Track your performance over time with detailed statistics</p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>▶️ How to Run the Game</h2>
+            <p>To play this quiz game, you'll need to clone the repository and run it locally:</p>
+            
+            <h3>Method 1: Direct Execution</h3>
+            <ol>
+                <li>Make sure you have Python installed (version 3.6 or higher)</li>
+                <li>Clone or download the repository</li>
+                <li>Navigate to the project directory in your terminal/command prompt</li>
+                <li>Run the game with:</li>
+            </ol>
+            <div class="code-block">
+                python main.py
+            </div>
+            
+            <h3>Method 2: Installation (Recommended)</h3>
+            <ol>
+                <li>Clone or download the repository</li>
+                <li>Navigate to the project directory</li>
+                <li>Install the package:</li>
+            </ol>
+            <div class="code-block">
+                pip install .
+            </div>
+            <p>Then run the game from anywhere:</p>
+            <div class="code-block">
+                quiz-game
+            </div>
+        </div>
+
+        <h2>🔗 Repository Links</h2>
+        <p>You can access the source code and documentation on GitHub:</p>
+        <a href="https://github.com/SaurabhPatil-393/Console-based-quiz-game-in-Python" class="btn">View on GitHub</a>
+        <a href="https://github.com/SaurabhPatil-393/Console-based-quiz-game-in-Python/archive/refs/heads/master.zip" class="btn">Download ZIP</a>
+
+        <div class="highlight">
+            <h2>🎯 How to Play</h2>
+            <ol>
+                <li>Enter your name when prompted</li>
+                <li>Select a category (or choose "All Categories" for mixed questions)</li>
+                <li>Choose a difficulty level:
+                    <ul>
+                        <li><strong>Easy</strong>: 10 points per question, 15 seconds per question</li>
+                        <li><strong>Medium</strong>: 20 points per question, 12 seconds per question</li>
+                        <li><strong>Hard</strong>: 30 points per question, 10 seconds per question</li>
+                        <li><strong>Adaptive</strong>: Automatically adjusts based on your performance</li>
+                    </ul>
+                </li>
+                <li>Answer each question before time runs out by entering A, B, C, or D</li>
+                <li>Earn bonus points for quick answers and streaks</li>
+                <li>See your score at the end with a performance evaluation</li>
+                <li>View the high scores leaderboard or your personal statistics</li>
+                <li>Choose to play again or exit</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Saurabh Patil | Console-Based Quiz Game in Python</p>
+        <p>This project is licensed under the MIT License</p>
+    </footer>
+</body>
+</html>
