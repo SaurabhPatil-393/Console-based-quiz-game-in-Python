@@ -27,11 +27,15 @@ A stylish and interactive quiz game built with Python that runs in the console/t
 ├── questions.py      # Question database organized by categories and difficulty
 ├── utils.py          # Utility functions for colors, animations, and formatting
 ├── scores.txt        # Stores player scores (automatically created)
+├── requirements.txt  # Python requirements (only core libraries)
+├── setup.py          # Package installation configuration
+├── .gitignore        # Files to exclude from version control
 └── README.md         # This file
 ```
 
 ## ▶️ How to Run
 
+### Method 1: Direct Execution
 1. Make sure you have Python installed (version 3.6 or higher)
 2. Navigate to the project directory in your terminal/command prompt
 3. Run the game with:
@@ -39,6 +43,18 @@ A stylish and interactive quiz game built with Python that runs in the console/t
    python main.py
    ```
 4. Follow the on-screen instructions to play!
+
+### Method 2: Installation (Recommended)
+1. Clone or download the repository
+2. Navigate to the project directory
+3. Install the package:
+   ```
+   pip install .
+   ```
+4. Run the game from anywhere:
+   ```
+   quiz-game
+   ```
 
 ## 🎯 How to Play
 
