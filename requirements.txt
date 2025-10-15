@@ -1,0 +1,6 @@
+# Console-Based Quiz Game Requirements
+
+# This project uses only core Python libraries and requires Python 3.6 or higher
+# No external packages are needed
+
+python>=3.6
